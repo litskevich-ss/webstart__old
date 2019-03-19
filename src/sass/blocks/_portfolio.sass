@@ -1,0 +1,46 @@
+.portfolio
+  padding: 90px 0 100px 0
+  background: $secondary url('../img/portfolio/portfolio-pattern.jpg') repeat-y center left
+  background-size: 50%
+  &__title
+    margin: auto
+    margin-bottom: 90px
+    max-width: 900px
+    font-size: 30px;
+    line-height: 45px;
+    +bold
+  &__arrows
+    max-width: 120px
+    margin: auto
+    margin-top: 68px
+    display: flex
+    justify-content: space-between
+
+.arrows__left, .arrows__right
+  width: 45px
+  height: 19px
+  border: none
+  outline: none
+
+.arrows__left
+  display: inline-block
+  background: url('../img/portfolio/left-arrow.png')
+
+.arrows__right
+  display: inline-block
+  background: url('../img/portfolio/right-arrow.png')
+
+.slider__image
+  max-width: 370px
+  margin: auto
+@media (max-width: 768px)
+  .portfolio
+    padding: 40px 0 64px 0
+    background: none
+    &__title
+      margin-bottom: 40px
+      font-size: 18px;
+    &__arrows
+      margin-top: 46px
+  .slider__image
+    max-width: 100%

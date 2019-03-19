@@ -1,0 +1,124 @@
+*
+  box-sizing: border-box
+
+body
+  +reg
+  color: $text-color
+img
+  max-width: 100%
+.container
+  width: 1170px
+  margin: auto
+
+.upTop
+  position: fixed
+  right: 20px
+  bottom: 30px
+  width: 50px
+  height: 50px
+  background-color: $main-color
+  min-width: 40px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25)
+  z-index: 3000
+  & img
+    width: 18px
+    height: 18px
+  &:hover
+    color: lighten($main-color, 10%)
+    cursor: pointer
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)
+    transition: box-shadow 0.4s ease-in-out
+.icon
+  font-size: 20px
+  color: $text-color
+
+@media (max-width: 1200px)
+  .container
+    width: 760px
+@media (max-width: 768px)
+  .container
+    width: 90%
+  .section
+    padding-top: 60px
+    padding-bottom: 60px
+.button
+  border-radius: 10px
+  background-color: $main-color
+  border: none
+  padding: 18px 30px
+  font-size: 13px
+  +bold
+  &:hover
+      background-color: lighten($main-color, 10%)
+      cursor: pointer
+  &:focus
+    outline: none
+.section
+  padding: 90px 0
+  &-title
+    font-size: 24px
+    +bold
+    text-align: center
+    max-width: 500px
+  &-subtitle
+    display: block
+    font-size: 16px
+.input
+  border: 1px solid $border-input-color
+  padding: 22px 26px
+  font-size: 15px
+  border-radius: 10px
+  outline: none
+  &:focus,
+    border: 1px solid $main-color
+.arrows
+  &__left, &__right
+    cursor: pointer
+.buttons
+  display: flex
+  justify-content: center
+  & btn
+    margin-right: 30px
+    &:last-child
+      margin-right: 0
+
+.form-group
+  position: relative
+  display: block
+
+.input.invalid
+  border: 2px solid $border-color-invalid
+
+div.invalid
+  position: absolute
+  bottom: 106px
+  right: 15px
+  display: inline-block
+  padding: 6px 5px
+  max-width: 200px
+  font-size: 12px
+  text-align: center
+  +bold
+  color: #ffffff
+  background: $border-color-invalid
+  border: 2px solid $text-color
+  border-radius: 4px
+  &:before
+    content: ''
+    position: absolute
+    right: 12px
+    bottom: -9px
+    width: 12px 
+    height: 12px
+    background: $border-color-invalid
+    border-right: 2px solid $text-color
+    border-bottom: 2px solid $text-color
+    transform: rotate(45deg)
+  @media(max-width: 1200px)
+    .form-group
+    div.invalid
+      bottom: 90px

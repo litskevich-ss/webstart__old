@@ -1,0 +1,29 @@
+{
+  "name": "repair",
+  "version": "1.0.0",
+  "description": "Репозиторий Лицкевича Сергея на курсе веб-старт",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/litskevich-ss/repair.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/litskevich-ss/repair/issues"
+  },
+  "homepage": "https://github.com/litskevich-ss/repair#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-js-minify": "0.0.3"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-tinypng-compress": "^1.2.1"
+  }
+}

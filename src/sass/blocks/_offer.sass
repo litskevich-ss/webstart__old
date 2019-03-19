@@ -1,0 +1,99 @@
+.offer
+  position: relative
+  background: url('../img/offer/offer-bg.jpg')
+  background-position: center right
+  background-size: contain
+  padding: 55px 0 90px 0
+  &:before
+    content: ''
+    width: 50%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-color: $main-bg-color
+  &-block
+    position: relative
+    width: 50%
+    padding-right: 90px
+  &__title
+    line-height: 35px
+    margin-bottom: 60px
+    text-align: left
+  &__subtitle
+    max-width: 250px
+    margin-bottom: 29px
+  .form-group
+    display: inline-block
+    width: 240px
+    &:first-child
+      margin-right: 10px
+  &__input
+    margin-bottom: 30px
+    width: 100%
+  &__button
+    display: inline-block
+    width: 100%
+    min-height: 70px
+    margin-bottom: 25px
+    padding: 26px 100px
+    font-size: 16px
+  &-explanation
+    display: flex
+    justify-content: center
+    font-size: 15px
+    line-height: 24px
+    & .explanation__text
+        & .phone
+            text-decoration: none
+            color: $text-color
+            +bold
+        &:first-child
+            width: 50%
+            margin-right: 50px
+        & .phone
+            +bold
+@media (max-width: 1200px)
+  .offer
+    background-size: cover
+    &__title
+      margin-bottom: 20px
+      font-size: 18px
+    &__subtitle
+      margin-bottom: 27px
+      font-size: 14px
+    &__input
+      width: 100%
+      margin-bottom: 10px
+    &__button
+      margin-bottom: 27px
+      padding: 19px 64px
+      font-size: 13px
+    .form-group
+      width: 100%
+    div.invalid
+      bottom: 85px
+    &-explanation
+      flex-direction: column
+      & .explanation__text
+        width: 100%
+        margin-right: 0
+        &:first-child
+            width: 100%
+            margin-right: 0
+        &:not(:first-child)
+          margin-top: 18px
+  .section
+    padding: 50px 0
+@media (max-width: 768px)
+  .offer
+    background: $main-bg-color
+    &-block
+      width: 100%
+      padding-right: 0
+    &-explanation
+      & .explanation__text
+          &:not(:first-child)
+            margin-top: 18px
+          &:first-child
+            width: 224px
